@@ -1,0 +1,87 @@
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
+ '(ansi-term-color-vector
+   [unspecified "#1F1611" "#660000" "#144212" "#EFC232" "#5798AE" "#BE73FD" "#93C1BC" "#E6E1DC"])
+ '(beacon-color "#F8BBD0")
+ '(browse-url-firefox-program "conkeror")
+ '(bugz-command "/home/tcech/bin/bugz")
+ '(column-number-mode t)
+ '(custom-enabled-themes (quote (cyberpunk)))
+ '(custom-safe-themes
+   (quote
+    ("235dc2dd925f492667232ead701c450d5c6fce978d5676e54ef9ca6dd37f6ceb" default)))
+ '(debbugs-gnu-default-packages (quote ("guix" "guix-patches")))
+ '(delete-selection-mode nil)
+ '(elfeed-feeds
+   (quote
+    ("http://www2.rozhlas.cz/podcast/podcast_porady.php?p_po=15" "http://nevsedni-svet.cz/feed/" "http://www.osel.cz/rss/rss.php" "http://www.root.cz/rss/zpravicky/" "http://www.abclinuxu.cz/auto/abc.rss" "http://www.linuxexpres.cz/rss/clanky" "http://linuxgizmos.com/feed" "http://www.abclinuxu.cz/auto/zpravicky.rss" "http://www.penguin.cz/rss.php" "http://rss.root.cz/clanky/" "http://mjg59.dreamwidth.org/data/rss" "http://linuxsoft.cz/export/linuxsoft_article_cz.rss" "http://taskwarrior.org/projects/taskwarrior/news.atom" "https://savannah.gnu.org/news/atom.php?group=guix" "https://savannah.nongnu.org/news/atom.php?group=guile-json" "http://www.enlightenment.org/rss.php?p=news&l=en" "http://taskwarrior.wordpress.com/feed/" "http://fsfe.org/news/news.en.rss" "http://ipfs.io/blog/rss.xml" "http://andromadus.flinny.org/?q=rss.xml" "http://existentialcomics.com/rss.xml" "http://edevel.tumblr.com/rss" "http://www.podrate.cz/rss.xml" "http://bugemos.com/?q=rss.xml" "http://programovani.tumblr.com/rss" "http://xkcd.com/rss.xml" "http://devopsreactions.tumblr.com/rss" "http://bulsit.cz/rss.xml" "http://www.bunicomic.com/feed/" "http://www.infobaden.cz/feed/" "https://connect.opensuse.org/mod/groups/topicposts.php?topic=42080&group_guid=42079&view=rss" "https://news.opensuse.org/feed" "https://connect.opensuse.org/pg/groups/42079/e17-users/?view=rss" "http://www.lunchtime.cz/rss/restaurant5001.rss" "http://lwn.net/headlines/newrss" "http://www.oesf.org/forum/index.php?act=rssout&id=2" "http://piratske-noviny.cz/run/rss.php?r_id=" "http://watashi-metan.livejournal.com/data/rss" "http://feeds.feedburner.com/SvetAndroida?format=xml" "http://svetneuspesnych.eu/feed/")))
+ '(fci-rule-character-color "#452E2E")
+ '(fringe-mode 10 nil (fringe))
+ '(highlight-indent-guides-auto-enabled nil)
+ '(highlight-symbol-colors
+   (quote
+    ("#F57F17" "#66BB6A" "#0097A7" "#42A5F5" "#7E57C2" "#D84315")))
+ '(highlight-symbol-foreground-color "#546E7A")
+ '(highlight-tail-colors (quote (("#F8BBD0" . 0) ("#FAFAFA" . 100))))
+ '(linum-format " %6d ")
+ '(main-line-color1 "#222232")
+ '(main-line-color2 "#333343")
+ '(mark-even-if-inactive t)
+ '(menu-bar-mode nil)
+ '(nrepl-message-colors
+   (quote
+    ("#183691" "#969896" "#a71d5d" "#969896" "#0086b3" "#795da3" "#a71d5d" "#969896")))
+ '(package-archives
+   (quote
+    (("marmalade" . "http://marmalade-repo.org/packages/")
+     ("gnu" . "http://elpa.gnu.org/packages/")
+     ("melpa" . "http://melpa.org/packages/")
+     ("melpa-stable" . "https://stable.melpa.org/packages/"))))
+ '(package-selected-packages
+   (quote
+    (ac-anaconda czech-holidays helm magit magit-filenotify magit-find-file magit-tramp markdown-preview-eww org-magit ox-reveal org-trello pinentry anaconda-mode orgit x86-lookup use-package projectile cyberpunk-theme helm-themes idle-highlight-mode pylint sauron debbugs wanderlust sane-term weechat pysmell py-import-check pep8 org-linkany org markdown-mode magit-gh-pulls helm-gtags helm-cscope helm-ag gitlab flymake-python-pyflakes elfeed cmake-mode ag ac-python ac-helm ac-geiser)))
+ '(pdf-view-midnight-colors (quote ("#969896" . "#f8eec7")))
+ '(pos-tip-background-color "#ffffff")
+ '(pos-tip-foreground-color "#78909C")
+ '(safe-local-variable-values
+   (quote
+    ((eval modify-syntax-entry 43 "'")
+     (bug-reference-bug-regexp . "<https?://\\(debbugs\\|bugs\\)\\.gnu\\.org/\\([0-9]+\\)>")
+     (eval modify-syntax-entry 36 "'")
+     (eval modify-syntax-entry 126 "'"))))
+ '(scroll-bar-mode nil)
+ '(show-paren-mode t)
+ '(tabbar-background-color "#ffffff")
+ '(tool-bar-mode nil)
+ '(url-cookie-trusted-urls (quote ("l3support.nue.suse.com" "l3support.suse.de")))
+ '(vc-annotate-background "#b0cde7")
+ '(vc-annotate-color-map
+   (quote
+    ((20 . "#969896")
+     (40 . "#183691")
+     (60 . "#969896")
+     (80 . "#969896")
+     (100 . "#969896")
+     (120 . "#a71d5d")
+     (140 . "#969896")
+     (160 . "#969896")
+     (180 . "#969896")
+     (200 . "#969896")
+     (220 . "#63a35c")
+     (240 . "#0086b3")
+     (260 . "#795da3")
+     (280 . "#969896")
+     (300 . "#0086b3")
+     (320 . "#969896")
+     (340 . "#a71d5d")
+     (360 . "#969896"))))
+ '(vc-annotate-very-old-color "#969896"))
+
+
