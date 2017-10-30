@@ -64,8 +64,8 @@
 
 (if
     (on-guix?)
-    (set-default-font "Terminus" nil t)
-    (set-default-font "xos4 Terminus" nil t)) ; openSUSE has same font with different name
+    (set-face-attribute 'default nil :font "Terminus" :height 120)
+  (set-face-attribute 'default nil :font "xos4 Terminus" :height 120))
 
 ;; Shows parenthesis
 (show-paren-mode 1)
@@ -268,5 +268,16 @@
 
 
 (read-agent-env)
+
+(defun markdown-html (buffer)
+  (princ (with-current-buffer buffer
+           (format "<!DOCTYPE html><html><title>Impatient Markdown</title><xmp theme=\"united\" style=\"display:none;\"> %s  </xmp><script src=\"http://strapdownjs.com/v/0.2/strapdown.js\"></script></html>" (buffer-substring-no-properties (point-min) (point-max))))
+         (current-buffer)))
+
+;; defunct yet
+(defun pandoc-markdown-html (buffer)
+  (princ (with-current-buffer buffer
+           (format "<!DOCTYPE html><html><title>Impatient Pandoc Markdown</title><xmp theme=\"united\" style=\"display:none;\"> %s  </xmp><script src=\"https://raw.githubusercontent.com/jakov/js-pandoc/master/js-pandoc.js\"></script><script>var html = text.Pandoc();</script></html>" (buffer-substring-no-properties (point-min) (point-max))))
+         (current-buffer)))
 
 ;;(setq load-home-init-file t) ; don't load init file from ~/.xemacs/init.el

@@ -8,7 +8,7 @@
  '(ansi-color-names-vector
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
  '(ansi-term-color-vector
-   [unspecified "#1F1611" "#660000" "#144212" "#EFC232" "#5798AE" "#BE73FD" "#93C1BC" "#E6E1DC"])
+   [unspecified "#1F1611" "#660000" "#144212" "#EFC232" "#5798AE" "#BE73FD" "#93C1BC" "#E6E1DC"] t)
  '(beacon-color "#F8BBD0")
  '(browse-url-firefox-program "conkeror")
  '(bugz-command "/home/tcech/bin/bugz")
@@ -16,7 +16,7 @@
  '(custom-enabled-themes (quote (cyberpunk)))
  '(custom-safe-themes
    (quote
-    ("235dc2dd925f492667232ead701c450d5c6fce978d5676e54ef9ca6dd37f6ceb" default)))
+    ("d6922c974e8a78378eacb01414183ce32bc8dbf2de78aabcc6ad8172547cb074" "235dc2dd925f492667232ead701c450d5c6fce978d5676e54ef9ca6dd37f6ceb" default)))
  '(debbugs-gnu-default-packages (quote ("guix" "guix-patches")))
  '(delete-selection-mode nil)
  '(elfeed-feeds
@@ -34,6 +34,7 @@
  '(main-line-color1 "#222232")
  '(main-line-color2 "#333343")
  '(mark-even-if-inactive t)
+ '(markdown-command "pandoc")
  '(menu-bar-mode nil)
  '(nrepl-message-colors
    (quote
@@ -46,7 +47,7 @@
      ("melpa-stable" . "https://stable.melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (ac-anaconda czech-holidays helm magit magit-filenotify magit-find-file magit-tramp markdown-preview-eww org-magit ox-reveal org-trello pinentry anaconda-mode orgit x86-lookup use-package projectile cyberpunk-theme helm-themes idle-highlight-mode pylint sauron debbugs wanderlust sane-term weechat pysmell py-import-check pep8 org-linkany org markdown-mode magit-gh-pulls helm-gtags helm-cscope helm-ag gitlab flymake-python-pyflakes elfeed cmake-mode ag ac-python ac-helm ac-geiser)))
+    (pandoc-mode impatient-mode ac-anaconda czech-holidays helm magit magit-filenotify magit-find-file magit-tramp markdown-preview-eww org-magit ox-reveal org-trello pinentry anaconda-mode orgit x86-lookup use-package projectile cyberpunk-theme helm-themes idle-highlight-mode pylint sauron debbugs wanderlust sane-term weechat pysmell py-import-check pep8 org-linkany org markdown-mode magit-gh-pulls helm-gtags helm-cscope helm-ag gitlab flymake-python-pyflakes elfeed cmake-mode ag ac-python ac-helm ac-geiser)))
  '(pdf-view-midnight-colors (quote ("#969896" . "#f8eec7")))
  '(pos-tip-background-color "#ffffff")
  '(pos-tip-foreground-color "#78909C")
@@ -85,3 +86,9 @@
  '(vc-annotate-very-old-color "#969896"))
 
 
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
