@@ -189,7 +189,8 @@
 (use-package org
 	     :defer t
 	     :init
-	     (setq org-hide-leading-stars 1))
+	     (setq org-hide-leading-stars 1)
+             (setq org-cycle-separator-lines 3))
 
 
 
