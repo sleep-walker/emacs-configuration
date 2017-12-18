@@ -285,3 +285,7 @@
 ;;(setq load-home-init-file t) ; don't load init file from ~/.xemacs/init.el
 
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
+
+;; (setq jenkins-api-token "d818a163901a6bdbd2f3a23f129d4426")
+;; (setq jenkins-url "https://ci.intgdc.com/api/xml")
+;; (setq jenkins-username "tomas.cech")

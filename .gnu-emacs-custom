@@ -12,6 +12,7 @@
  '(beacon-color "#F8BBD0")
  '(browse-url-firefox-program "conkeror")
  '(bugz-command "/home/tcech/bin/bugz")
+ '(calendar-week-start-day 1)
  '(column-number-mode t)
  '(custom-enabled-themes (quote (cyberpunk)))
  '(custom-safe-themes
@@ -21,7 +22,9 @@
  '(delete-selection-mode nil)
  '(elfeed-feeds
    (quote
-    ("http://www2.rozhlas.cz/podcast/podcast_porady.php?p_po=15" "http://nevsedni-svet.cz/feed/" "http://www.osel.cz/rss/rss.php" "http://www.root.cz/rss/zpravicky/" "http://www.abclinuxu.cz/auto/abc.rss" "http://www.linuxexpres.cz/rss/clanky" "http://linuxgizmos.com/feed" "http://www.abclinuxu.cz/auto/zpravicky.rss" "http://www.penguin.cz/rss.php" "http://rss.root.cz/clanky/" "http://mjg59.dreamwidth.org/data/rss" "http://linuxsoft.cz/export/linuxsoft_article_cz.rss" "http://taskwarrior.org/projects/taskwarrior/news.atom" "https://savannah.gnu.org/news/atom.php?group=guix" "https://savannah.nongnu.org/news/atom.php?group=guile-json" "http://www.enlightenment.org/rss.php?p=news&l=en" "http://taskwarrior.wordpress.com/feed/" "http://fsfe.org/news/news.en.rss" "http://ipfs.io/blog/rss.xml" "http://andromadus.flinny.org/?q=rss.xml" "http://existentialcomics.com/rss.xml" "http://edevel.tumblr.com/rss" "http://www.podrate.cz/rss.xml" "http://bugemos.com/?q=rss.xml" "http://programovani.tumblr.com/rss" "http://xkcd.com/rss.xml" "http://devopsreactions.tumblr.com/rss" "http://bulsit.cz/rss.xml" "http://www.bunicomic.com/feed/" "http://www.infobaden.cz/feed/" "https://connect.opensuse.org/mod/groups/topicposts.php?topic=42080&group_guid=42079&view=rss" "https://news.opensuse.org/feed" "https://connect.opensuse.org/pg/groups/42079/e17-users/?view=rss" "http://www.lunchtime.cz/rss/restaurant5001.rss" "http://lwn.net/headlines/newrss" "http://www.oesf.org/forum/index.php?act=rssout&id=2" "http://piratske-noviny.cz/run/rss.php?r_id=" "http://watashi-metan.livejournal.com/data/rss" "http://feeds.feedburner.com/SvetAndroida?format=xml" "http://svetneuspesnych.eu/feed/")))
+    ("http://www2.rozhlas.cz/podcast/podcast_porady.php?p_po=15" "http://nevsedni-svet.cz/feed/" "http://www.osel.cz/rss/rss.php" "http://www.root.cz/rss/zpravicky/" "http://www.abclinuxu.cz/auto/abc.rss" "http://www.linuxexpres.cz/rss/clanky" "http://linuxgizmos.com/feed" "http://www.abclinuxu.cz/auto/zpravicky.rss" "http://www.penguin.cz/rss.php" "http://rss.root.cz/clanky/" "http://mjg59.dreamwidth.org/data/rss" "http://linuxsoft.cz/export/linuxsoft_article_cz.rss" "http://taskwarrior.org/projects/taskwarrior/news.atom" "https://savannah.gnu.org/news/atom.php?group=guix" "https://savannah.nongnu.org/news/atom.php?group=guile-json" "http://www.enlightenment.org/rss.php?p=news&l=en" "http://taskwarrior.wordpress.com/feed/" "http://fsfe.org/news/news.en.rss" "http://ipfs.io/blog/rss.xml" "http://andromadus.flinny.org/?q=rss.xml" "http://existentialcomics.com/rss.xml" "http://edevel.tumblr.com/rss" "http://www.podrate.cz/rss.xml" "http://bugemos.com/?q=rss.xml" "http://programovani.tumblr.com/rss" "http://xkcd.com/rss.xml" "http://devopsreactions.tumblr.com/rss" "http://bulsit.cz/rss.xml" "http://www.bunicomic.com/feed/" "http://www.infobaden.cz/feed/" "https://connect.opensuse.org/mod/groups/topicposts.php?topic=42080&group_guid=42079&view=rss" "https://news.opensuse.org/feed" "https://connect.opensuse.org/pg/groups/42079/e17-users/?view=rss" "http://www.lunchtime.cz/rss/restaurant5001.rss" "http://lwn.net/headlines/newrss" "http://www.oesf.org/forum/index.php?act=rssout&id=2" "http://piratske-noviny.cz/run/rss.php?r_id=" "http://watashi-metan.livejournal.com/data/rss" "http://feeds.feedburner.com/SvetAndroida?format=xml" "http://svetneuspesnych.eu/feed/" "https://build.opensuse.org/user/feed/BgkhEKdahDFJGuUxNZZpsy52")))
+ '(enwc-wired-device "enp0s31f6")
+ '(enwc-wireless-device "wlp1s0")
  '(fci-rule-character-color "#452E2E")
  '(fringe-mode 10 nil (fringe))
  '(highlight-indent-guides-auto-enabled nil)
@@ -39,15 +42,20 @@
  '(nrepl-message-colors
    (quote
     ("#183691" "#969896" "#a71d5d" "#969896" "#0086b3" "#795da3" "#a71d5d" "#969896")))
+ '(org-agenda-files
+   (quote
+    ("~/org/1-2-1.org" "~/org/chata.org" "~/org/puda.org" "~/org/doma.org" "~/org/ja.org" "~/org/work.org" "~/org/tools.org" "~/org/tyden.org")))
+ '(org-hide-leading-stars t t)
  '(package-archives
    (quote
     (("marmalade" . "http://marmalade-repo.org/packages/")
      ("gnu" . "http://elpa.gnu.org/packages/")
      ("melpa" . "http://melpa.org/packages/")
-     ("melpa-stable" . "https://stable.melpa.org/packages/"))))
+     ("melpa-stable" . "https://stable.melpa.org/packages/")
+     ("orgmode" . "http://orgmode.org/elpa/"))))
  '(package-selected-packages
    (quote
-    (pandoc-mode impatient-mode ac-anaconda czech-holidays helm magit magit-filenotify magit-find-file magit-tramp markdown-preview-eww org-magit ox-reveal org-trello pinentry anaconda-mode orgit x86-lookup use-package projectile cyberpunk-theme helm-themes idle-highlight-mode pylint sauron debbugs wanderlust sane-term weechat pysmell py-import-check pep8 org-linkany org markdown-mode magit-gh-pulls helm-gtags helm-cscope helm-ag gitlab flymake-python-pyflakes elfeed cmake-mode ag ac-python ac-helm ac-geiser)))
+    (buffer-move github-browse-file github-clone github-elpa github-issues github-modern-theme github-notifier github-pullrequest github-search grapnel http-twiddle request-deferred restclient restclient-helm groovy-mode python-pep8 python-pylint confluence sudoku dokuwiki dokuwiki-mode pass passmm password-store jenkins jira jira-markup-mode org-jira flycheck-yamllint puppet-mode yaml-mode markdown-mode+ markdown-preview-mode guix pretty-sha-path ac-etags helm-unicode rpm-spec-mode org xcscope impatient-mode skewer-mode org-plus-contrib multiple-cursors enwc seq ac-anaconda czech-holidays helm magit magit-filenotify magit-find-file magit-tramp markdown-preview-eww org-magit ox-reveal org-trello pinentry anaconda-mode orgit x86-lookup use-package projectile cyberpunk-theme helm-themes idle-highlight-mode pylint sauron debbugs wanderlust sane-term weechat pysmell py-import-check pep8 org-linkany markdown-mode magit-gh-pulls helm-gtags helm-cscope helm-ag gitlab flymake-python-pyflakes elfeed cmake-mode ag ac-python ac-helm ac-geiser)))
  '(pdf-view-midnight-colors (quote ("#969896" . "#f8eec7")))
  '(pos-tip-background-color "#ffffff")
  '(pos-tip-foreground-color "#78909C")
@@ -58,7 +66,12 @@
      (eval modify-syntax-entry 36 "'")
      (eval modify-syntax-entry 126 "'"))))
  '(scroll-bar-mode nil)
+ '(send-mail-function (quote smtpmail-send-it))
  '(show-paren-mode t)
+ '(smtpmail-smtp-server "fencepost.gnu.org")
+ '(smtpmail-smtp-service 587)
+ '(smtpmail-smtp-user "sleepwalker")
+ '(split-height-threshold 200)
  '(tabbar-background-color "#ffffff")
  '(tool-bar-mode nil)
  '(url-cookie-trusted-urls (quote ("l3support.nue.suse.com" "l3support.suse.de")))
