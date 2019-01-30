@@ -131,6 +131,11 @@
  (lambda ()
    (setq pcomplete-cycle-completions nil)))
 
+(add-hook
+ 'term-mode-hook
+ (lambda ()
+   (setq show-trailing-whitespace nil)))
+
 ;; tramp
 ;;(load "~/.emacs.d/my-config/tramp-config.el")
 
