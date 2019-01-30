@@ -320,3 +320,5 @@
 
 (add-hook 'term-mode-hook 'prepare-editor-for-term)
 
+
+(setq geiser-active-implementations '(guile))
