@@ -230,7 +230,7 @@
   (load-library "~/.emacs.d/org-wl.el"))
 
 ;; Browser
-(setq browse-url-generic-program "conkeror")
+(setq browse-url-generic-program "/home/tcech/bin/url-handler.sh")
 (setq browse-url-browser-function 'browse-url-generic)
 
 
