@@ -306,3 +306,6 @@
      begin end
      "sed -n '/[^[:blank:]]/s@^@[ ] @p' > ~/tmp/nakup.txt"
      nil nil nil nil nil)))
+
+(defun user-mail-address ()
+  "tomas.cech@gooddata.com")
