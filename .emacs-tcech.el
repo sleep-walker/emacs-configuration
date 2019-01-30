@@ -309,3 +309,14 @@
 
 (defun user-mail-address ()
   "tomas.cech@gooddata.com")
+
+(defun prepare-editor-for-term ()
+  (unless (boundp 'ansi-term-session-name)
+    (let ((srvname (read-string "server name: ")))
+      (setq ansi-term-session-name srvname)
+      (setq server-name srvname)
+      (server-start)
+      (setenv "EMACS_SESSION" srvname))))
+
+(add-hook 'term-mode-hook 'prepare-editor-for-term)
+
