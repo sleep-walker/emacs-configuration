@@ -225,10 +225,9 @@
   (setq bidi-paragraph-direction 'left-to-right))
 
 
-;; Wanderlust
-(use-package wanderlust
-  :bind ("<f3>" . wl-folder-check-all))
-
+(use-package wl
+  :init
+  (load-library "~/.emacs.d/org-wl.el"))
 
 ;; Browser
 (setq browse-url-generic-program "conkeror")
