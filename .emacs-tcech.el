@@ -208,7 +208,10 @@
 ;;                 (org-trello-mode))))
 
 (use-package magit
-  :defer t)
+  :defer t
+  :init
+  (require 'magit-gh-pulls)
+  (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls))
 
 
 (use-package sane-term
