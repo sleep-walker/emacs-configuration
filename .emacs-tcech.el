@@ -322,3 +322,10 @@
 
 
 (setq geiser-active-implementations '(guile))
+
+(defun comint-clear ()
+  (interactive)
+  (let ((comint-buffer-maximum-size 0))
+    (comint-truncate-buffer)))
+
+(add-hook 'inferior-python-mode-hook (lambda () (local-set-key (kbd "C-c l") 'comint-clear))) 
