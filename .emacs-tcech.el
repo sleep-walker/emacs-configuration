@@ -296,3 +296,13 @@
 ;; (setq jenkins-api-token "d818a163901a6bdbd2f3a23f129d4426")
 ;; (setq jenkins-url "https://ci.intgdc.com/api/xml")
 ;; (setq jenkins-username "tomas.cech")
+
+(defun org-export-nakup ()
+  (interactive)
+  (let* ((e (org-element-at-point))
+         (begin (org-element-property :contents-begin e))
+         (end   (org-element-property :contents-end e)))
+    (shell-command-on-region
+     begin end
+     "sed -n '/[^[:blank:]]/s@^@[ ] @p' > ~/tmp/nakup.txt"
+     nil nil nil nil nil)))
