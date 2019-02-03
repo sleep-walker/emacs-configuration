@@ -8,7 +8,7 @@
 (package-initialize)
 (setq use-package-verbose t)
 
-(setq emacs-config-path "/Devel/git/emacs-config/")
+(setq emacs-config-path "/Devel/git/emacs-configuration/")
 (setq custom-file (concat emacs-config-path ".gnu-emacs-custom"))
 (load custom-file t t)
 

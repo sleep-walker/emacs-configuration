@@ -52,12 +52,6 @@
 (global-set-key (kbd "C-x p") (lambda () (interactive (other-window -1))))
 
 
-;; use helm
-(global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key (kbd "C-x b") 'helm-buffers-list)
-(global-set-key (kbd "C-x C-f") 'helm-find-files)
-
-
 (defun on-guix? ()
   (file-exists-p "/run/current-system"))
 
@@ -129,7 +123,8 @@
 (add-hook
  'eshell-mode-hook
  (lambda ()
-   (setq pcomplete-cycle-completions nil)))
+   (setq pcomplete-cycle-completions nil)
+   (setq show-trailing-whitespace nil)))
 
 (add-hook
  'term-mode-hook
@@ -198,6 +193,12 @@
              (setq org-cycle-separator-lines 3))
 
 
+(use-package helm
+  :init
+  (global-set-key (kbd "M-x") 'helm-M-x)
+  (global-set-key (kbd "C-x b") 'helm-buffers-list)
+  (global-set-key (kbd "C-x C-f") 'helm-find-files))
+
 
 (use-package org-trello
   :defer t)
@@ -226,6 +227,7 @@
 
 
 (use-package wl
+  :defer t
   :init
   (load-library "~/.emacs.d/org-wl.el"))
 
