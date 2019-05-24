@@ -207,14 +207,6 @@
   (global-set-key (kbd "C-x C-f") 'helm-find-files))
 
 
-(use-package org-trello
-  :defer t)
-
-;; (add-hook 'org-mode-hook
-;;           (lambda ()
-;;             (if (string-match "trello\\.org$" buffer-file-name)
-;;                 (org-trello-mode))))
-
 (use-package magit
   :defer t
   :init
