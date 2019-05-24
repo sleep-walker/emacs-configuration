@@ -103,7 +103,8 @@
 ;; Python related
 (add-hook 'inferior-python-mode-hook
  	  (lambda ()
-	    (setenv "PAGER" "/bin/cat")
+	    (setenv "PAGER" "cat")
+            (setq show-trailing-whitespace nil)
 	    (xtags-mode)))
 
 
