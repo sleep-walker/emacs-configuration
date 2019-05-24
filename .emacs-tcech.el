@@ -214,8 +214,7 @@
   :after magit)
 
 (use-package sane-term
-  :bind (("C-x t" . sane-term)
-	 ("C-x T" . sane-term-create)))
+  :bind (("C-x T" . sane-term-create)))
 
 ;; Terminal buffer configuration.
 (add-hook 'term-mode-hook 'my-term-mode-hook)
