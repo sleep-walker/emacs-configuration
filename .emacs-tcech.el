@@ -208,11 +208,10 @@
 
 
 (use-package magit
-  :defer t
-  :init
-  (require 'magit-gh-pulls)
-  (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls))
+  :defer t)
 
+(use-package forge
+  :after magit)
 
 (use-package sane-term
   :bind (("C-x t" . sane-term)
