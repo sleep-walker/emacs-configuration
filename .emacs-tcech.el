@@ -397,3 +397,8 @@
     (comint-truncate-buffer)))
 
 (add-hook 'inferior-python-mode-hook (lambda () (local-set-key (kbd "C-c l") 'comint-clear))) 
+(defun start-server-with-name ()
+  (interactive)
+  (setq server-name (read-string "Server name: "))
+  (server-start))
+
