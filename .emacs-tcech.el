@@ -127,10 +127,16 @@
    (setq pcomplete-cycle-completions nil)
    (setq show-trailing-whitespace nil)))
 
+(defun term-send-shift-right () (interactive) (term-send-raw-string "\e[1;2C"))
+(defun term-send-shift-left  () (interactive) (term-send-raw-string "\e[1;2D"))
+
 (add-hook
  'term-mode-hook
  (lambda ()
-   (setq show-trailing-whitespace nil)))
+   (setq show-trailing-whitespace nil)
+   (bind-key "<C-S-c>" 'kill-ring-save)
+   (bind-key "<S-right>" 'term-send-shift-right)
+   (bind-key "<S-left>" 'term-send-shift-left)))
 
 ;; tramp
 ;;(load "~/.emacs.d/my-config/tramp-config.el")
