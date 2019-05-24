@@ -378,16 +378,17 @@
 (defun user-mail-address ()
   "tomas.cech@gooddata.com")
 
-(defun prepare-editor-for-term ()
-  (unless (boundp 'ansi-term-session-name)
-    (let ((srvname (read-string "server name: ")))
-      (setq ansi-term-session-name srvname)
-      (setq server-name srvname)
-      (server-start)
-      (setenv "EMACS_SESSION" srvname))))
+;; (defun prepare-editor-for-term ()
+;;   (unless (boundp 'ansi-term-session-name)
+;;     (let ((srvname (read-string "server name: ")))
+;;       (setq ansi-term-session-name srvname)
+;;       (setq server-name srvname)
+;;       (server-start)
+;;       (setenv "EMACS_SESSION" srvname))))
 
-(add-hook 'term-mode-hook 'prepare-editor-for-term)
-
+;; (add-hook 'shell-mode-hook  'with-editor-export-editor)
+;; (add-hook 'term-exec-hook   'with-editor-export-editor)
+;; (add-hook 'eshell-mode-hook 'with-editor-export-editor)
 
 (setq geiser-active-implementations '(guile))
 
@@ -397,6 +398,9 @@
     (comint-truncate-buffer)))
 
 (add-hook 'inferior-python-mode-hook (lambda () (local-set-key (kbd "C-c l") 'comint-clear))) 
+
+(setenv "PAGER" "cat")
+
 (defun start-server-with-name ()
   (interactive)
   (setq server-name (read-string "Server name: "))
