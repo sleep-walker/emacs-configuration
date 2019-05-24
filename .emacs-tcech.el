@@ -297,6 +297,10 @@
   :after treemacs dired
   :ensure t
   :config (treemacs-icons-dired-mode))
+
+(use-package gitignore-mode
+  :defer t)
+
 ;; Browser
 (setq browse-url-generic-program "/home/tcech/bin/url-handler.sh")
 (setq browse-url-browser-function 'browse-url-generic)
