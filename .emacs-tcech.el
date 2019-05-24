@@ -57,10 +57,10 @@
 
 
 (if
-    (ignore-errors (set-face-attribute 'default nil :font "xos4 Terminus" :height 120)
+    (ignore-errors (set-face-attribute 'default nil :font "xos4 Terminus" :height 100)
 		   t)
     t
-  (set-face-attribute 'default nil :font "Terminus" :height 120))
+  (set-face-attribute 'default nil :font "Terminus" :height 100))
 
 ;; Shows parenthesis
 (show-paren-mode 1)
