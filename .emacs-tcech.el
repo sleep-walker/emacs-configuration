@@ -383,7 +383,7 @@
      nil nil nil nil nil)))
 
 (defun user-mail-address ()
-  "tomas.cech@gooddata.com")
+  "tomas.cech@ubnt.com")
 
 ;; (defun prepare-editor-for-term ()
 ;;   (unless (boundp 'ansi-term-session-name)
