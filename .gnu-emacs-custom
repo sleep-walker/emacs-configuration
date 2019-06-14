@@ -79,7 +79,11 @@
  '(python-shell-interpreter "python3")
  '(safe-local-variable-values
    (quote
-    ((indent-tabs-mode \.t)
+    ((eval progn
+           (pyvenv-activate
+            (format "%s.virtualenv" default-directory))
+           (setenv "PYTHONSTARTUP" "/Devel/ubnt/unifi-recurly-backend-prelude.py"))
+     (indent-tabs-mode \.t)
      (eval modify-syntax-entry 43 "'")
      (bug-reference-bug-regexp . "<https?://\\(debbugs\\|bugs\\)\\.gnu\\.org/\\([0-9]+\\)>")
      (eval modify-syntax-entry 36 "'")
