@@ -213,6 +213,9 @@
 (use-package forge
   :after magit)
 
+(use-package pyvenv
+  :defer t)
+
 (use-package sane-term
   :bind (("C-x T" . sane-term-create)))
 
