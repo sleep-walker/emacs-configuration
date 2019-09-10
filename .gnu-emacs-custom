@@ -6,12 +6,10 @@
  '(ansi-color-faces-vector
    [default bold shadow italic underline bold bold-italic bold])
  '(ansi-color-names-vector
-   ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
+   ["#000000" "#8b0000" "#00ff00" "#ffa500" "#7b68ee" "#dc8cc3" "#93e0e3" "#dcdccc"])
  '(ansi-term-color-vector
    [term term-color-black term-color-red term-color-green term-color-yellow term-color-blue term-color-magenta term-color-cyan term-color-white] t)
  '(beacon-color "#F8BBD0")
- '(browse-url-firefox-program "conkeror")
- '(bugz-command "/home/tcech/bin/bugz")
  '(calendar-day-abbrev-array ["Ne" "Po" "Út" "St" "Čt" "Pá" "So"])
  '(calendar-day-header-array ["Ne" "Po" "Út" "St" "Čt" "Pá" "So"])
  '(calendar-day-name-array
@@ -23,7 +21,7 @@
  '(custom-enabled-themes (quote (cyberpunk)))
  '(custom-safe-themes
    (quote
-    ("59e82a683db7129c0142b4b5a35dbbeaf8e01a4b81588f8c163bd255b76f4d21" "d1cc05d755d5a21a31bced25bed40f85d8677e69c73ca365628ce8024827c9e3" "923ee73494ea3611d2a1ff9f31bbf8d71b0b0cc2aeb4a6e0944ec6c83bc0ac23" "58f090ea19f5bc674a5a58738dedfb1907107f4953eb0e2ed493253c49356348" "9fe1540491fcf692b8c639a3abacd32b29233bc4cb834a12a0fd1e01cbd0a128" "d6922c974e8a78378eacb01414183ce32bc8dbf2de78aabcc6ad8172547cb074" "235dc2dd925f492667232ead701c450d5c6fce978d5676e54ef9ca6dd37f6ceb" default)))
+    ("6bc387a588201caf31151205e4e468f382ecc0b888bac98b2b525006f7cb3307" "170bb47b35baa3d2439f0fd26b49f4278e9a8decf611aa33a0dad1397620ddc3" "59e82a683db7129c0142b4b5a35dbbeaf8e01a4b81588f8c163bd255b76f4d21" "d1cc05d755d5a21a31bced25bed40f85d8677e69c73ca365628ce8024827c9e3" "923ee73494ea3611d2a1ff9f31bbf8d71b0b0cc2aeb4a6e0944ec6c83bc0ac23" "58f090ea19f5bc674a5a58738dedfb1907107f4953eb0e2ed493253c49356348" "9fe1540491fcf692b8c639a3abacd32b29233bc4cb834a12a0fd1e01cbd0a128" "d6922c974e8a78378eacb01414183ce32bc8dbf2de78aabcc6ad8172547cb074" "235dc2dd925f492667232ead701c450d5c6fce978d5676e54ef9ca6dd37f6ceb" default)))
  '(debbugs-gnu-default-packages (quote ("guix" "guix-patches")))
  '(delete-selection-mode nil)
  '(elfeed-feeds
@@ -34,9 +32,10 @@
  '(enwc-wireless-device "wlp1s0")
  '(explicit-shell-file-name nil)
  '(fci-rule-character-color "#452E2E")
- '(fci-rule-color "#c7c7c7")
+ '(fci-rule-color "#383838")
  '(fringe-mode 10 nil (fringe))
  '(geiser-default-implementation (quote guile))
+ '(gh-api-v3-authenticator (quote gh-oauth-authenticator))
  '(highlight-indent-guides-auto-enabled nil)
  '(highlight-symbol-colors
    (quote
@@ -69,10 +68,10 @@
      ("orgmode" . "http://orgmode.org/elpa/"))))
  '(package-selected-packages
    (quote
-    (leuven-theme parchment-theme prassee-theme spacemacs-theme kaolin-themes mysql-to-org sql-indent sqlup-mode edbi edbi-database-url highlight-indentation highlight-indent-guides fold-this hideshowvis origami cov coverage pycoverage emojify-logos mingus mpdel no-emoji forge pycomplete pymacs py-yapf yapfify ox-gfm pyvenv with-venv gimme flycheck-pyflakes py-autopep8 pyflakes jedi jedi-core jedi-direx treemacs-icons-dired treemacs-magit emacsql emacsql-mysql ob-sql-mode org-sql matrix-client frame-purpose rainbow-identifiers esxml tracking ov a f dash-functional anaphora quelpa-use-package quelpa 2048-game ac-rtags geiser helm-flyspell md4rd org-doing pretty-mode slime calfw calfw-gcal calfw-org edit-server slack magit-org-todos org-sync anti-zenburn-theme color-theme-sanityinc-solarized lenlen-theme solarized-theme org-gcal all move-text edts erlang flycheck-rebar3 pulseaudio-control volume bongo dionysos playerctl ampc xterm-color wgrep wgrep-ag wgrep-helm
-                  #("wgrep" 0 5
-                    (escaped t))
-                  "wgrep" treemacs beacon docker dockerfile-mode marcopolo gnus-desktop-notify oauth oauth2 butler jenkins-watch shell-pop buffer-move github-browse-file github-clone github-elpa github-issues github-notifier github-pullrequest github-search grapnel http-twiddle request-deferred restclient restclient-helm groovy-mode python-pep8 python-pylint sudoku dokuwiki dokuwiki-mode pass passmm password-store jenkins jira jira-markup-mode org-jira flycheck-yamllint puppet-mode yaml-mode markdown-mode+ markdown-preview-mode guix pretty-sha-path ac-etags helm-unicode rpm-spec-mode org xcscope impatient-mode skewer-mode org-plus-contrib multiple-cursors enwc seq ac-anaconda czech-holidays helm magit magit-filenotify magit-find-file magit-tramp markdown-preview-eww org-magit ox-reveal org-trello pinentry anaconda-mode orgit x86-lookup use-package projectile cyberpunk-theme helm-themes idle-highlight-mode pylint sauron debbugs wanderlust sane-term pysmell py-import-check pep8 org-linkany markdown-mode helm-gtags helm-cscope helm-ag gitlab flymake-python-pyflakes elfeed cmake-mode ag ac-python ac-helm ac-geiser)))
+    (helm-projectile org-projectile projectile-git-autofetch better-defaults elpy immaterial-theme material-theme pyenv-mode cyberpunk-2019-theme magit-diff-flycheck magit-todos org-alert org-autolist org-beautify-theme org-bullets org-caldav org-cliplink org-index org-journal org-link-minor-mode org-recur org-rich-yank org-shoplist org-super-agenda emacsql-sqlite ob-sql-mode emacsql-mysql treemacs-icons-dired treemacs-magit company tide typescript-mode flycheck-pyflakes flymake-shell pyflakes leuven-theme dash ghub kubernetes kubernetes-helm magit-gitflow forge jedi jedi-core jedi-direx pungi matrix-client frame-purpose rainbow-identifiers esxml tracking ov a f dash-functional anaphora quelpa-use-package quelpa 2048-game ac-rtags geiser helm-flyspell md4rd org-doing pretty-mode slime calfw calfw-gcal calfw-org edit-server slack magit-org-todos org-sync anti-zenburn-theme color-theme-sanityinc-solarized lenlen-theme solarized-theme org-gcal all move-text edts erlang flycheck-rebar3 pulseaudio-control volume bongo dionysos playerctl ampc xterm-color wgrep wgrep-ag wgrep-helm
+                     #("wgrep" 0 5
+                       (escaped t))
+                     "wgrep" treemacs beacon docker dockerfile-mode marcopolo gnus-desktop-notify oauth oauth2 butler jenkins-watch shell-pop buffer-move github-browse-file github-clone github-elpa github-issues github-notifier github-pullrequest github-search grapnel http-twiddle request-deferred restclient restclient-helm groovy-mode python-pep8 python-pylint sudoku dokuwiki dokuwiki-mode pass passmm password-store jenkins jira jira-markup-mode org-jira flycheck-yamllint puppet-mode yaml-mode markdown-mode+ markdown-preview-mode guix pretty-sha-path ac-etags helm-unicode rpm-spec-mode org xcscope impatient-mode skewer-mode org-plus-contrib multiple-cursors enwc seq ac-anaconda czech-holidays helm magit magit-filenotify magit-find-file magit-tramp markdown-preview-eww org-magit ox-reveal org-trello pinentry anaconda-mode orgit x86-lookup use-package projectile cyberpunk-theme helm-themes idle-highlight-mode pylint sauron debbugs wanderlust sane-term pysmell py-import-check pep8 org-linkany markdown-mode helm-gtags helm-cscope helm-ag gitlab flymake-python-pyflakes elfeed cmake-mode ag ac-python ac-helm ac-geiser)))
  '(pdf-view-midnight-colors (quote ("#969896" . "#f8eec7")))
  '(pos-tip-background-color "#ffffff")
  '(pos-tip-foreground-color "#78909C")
@@ -94,13 +93,14 @@
  '(shell-pop-shell-type (quote ("eshell" "*eshell*" (lambda nil (eshell)))))
  '(shell-pop-term-shell "/bin/sh")
  '(show-paren-mode t)
- '(smtpmail-smtp-server "fencepost.gnu.org" t)
- '(smtpmail-smtp-service 587 t)
+ '(smtpmail-smtp-server "fencepost.gnu.org")
+ '(smtpmail-smtp-service 587)
  '(smtpmail-smtp-user "sleepwalker")
  '(split-height-threshold 200)
+ '(sql-mysql-options (quote ("--binary-as-hex" "--prompt=\\h\\ [\\d]>\\ ")))
+ '(sql-mysql-program "mysql")
  '(tabbar-background-color "#ffffff")
  '(tool-bar-mode nil)
- '(url-cookie-trusted-urls (quote ("l3support.nue.suse.com" "l3support.suse.de")))
  '(vc-annotate-background "#b0cde7")
  '(vc-annotate-color-map
    (quote
