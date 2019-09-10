@@ -465,3 +465,9 @@
 ;; formats the buffer before saving
 
 
+(defun reformat-log ()
+  (interactive)
+  (shell-command-on-region (line-beginning-position) (line-end-position) "sed 's@\\\\n@\\n@g'" (current-buffer) t))
+
+(add-hook 'org-mode-hook (lambda () (local-set-key (kbd "C-c r") 'reformat-log)))
+
