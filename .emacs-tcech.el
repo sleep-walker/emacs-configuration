@@ -425,6 +425,18 @@
   (setq server-name (read-string "Server name: "))
   (server-start))
 
+(setq tramp-remote-path
+      '("/home/tcech/bin"
+        "/run/setuid-programs"
+        "/home/tcech/.config/guix/current/bin"
+        "/home/tcech/.guix-profile/bin"
+        "/home/tcech/.guix-profile/sbin"
+        "/run/current-system/profile/bin"
+        "/run/current-system/profile/sbin"
+        "/bin"
+        "/usr/bin"
+        "/usr/local/bin"))
+
 (defun setup-tide-mode ()
   (interactive)
   (tide-setup)
