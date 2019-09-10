@@ -315,6 +315,11 @@
     (sql-set-product-feature 'mysql :prompt-regexp "^\\([a-zA-Z0-9().-]*\\) \\[[_a-zA-Z0-9().-]*\\]> ")
     (toggle-truncate-lines)))
 
+(use-package elpy
+  :ensure t
+  :init
+  (elpy-enable))
+
 
 ;; IRC
 (defun connect-sleep-server ()
