@@ -471,3 +471,7 @@
 
 (add-hook 'org-mode-hook (lambda () (local-set-key (kbd "C-c r") 'reformat-log)))
 
+
+(projectile-mode +1)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
