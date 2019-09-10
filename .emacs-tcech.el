@@ -308,6 +308,13 @@
 (setq browse-url-generic-program "/home/tcech/bin/url-handler.sh")
 (setq browse-url-browser-function 'browse-url-generic)
 
+(use-package sql
+  :defer t
+  :config
+  (progn
+    (sql-set-product-feature 'mysql :prompt-regexp "^\\([a-zA-Z0-9().-]*\\) \\[[_a-zA-Z0-9().-]*\\]> ")
+    (toggle-truncate-lines)))
+
 
 ;; IRC
 (defun connect-sleep-server ()
