@@ -315,10 +315,16 @@
     (sql-set-product-feature 'mysql :prompt-regexp "^\\([a-zA-Z0-9().-]*\\) \\[[_a-zA-Z0-9().-]*\\]> ")
     (toggle-truncate-lines)))
 
-(use-package elpy
-  :ensure t
-  :init
-  (elpy-enable))
+;; (use-package elpy
+;;  :ensure t
+;;   :defer t
+;;   :init
+;;   (elpy-enable)
+;;	(setq python-shell-interpreter "jupyter"
+;;	      python-shell-interpreter-args "console --simple-prompt"
+;;	      python-shell-prompt-detect-failure-warning nil)
+;;	(add-to-list 'python-shell-completion-native-disabled-interpreters "jupyter")
+;;)
 
 
 ;; IRC
