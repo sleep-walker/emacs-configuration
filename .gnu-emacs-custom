@@ -21,7 +21,7 @@
  '(custom-enabled-themes (quote (cyberpunk)))
  '(custom-safe-themes
    (quote
-    ("6bc387a588201caf31151205e4e468f382ecc0b888bac98b2b525006f7cb3307" "170bb47b35baa3d2439f0fd26b49f4278e9a8decf611aa33a0dad1397620ddc3" "59e82a683db7129c0142b4b5a35dbbeaf8e01a4b81588f8c163bd255b76f4d21" "d1cc05d755d5a21a31bced25bed40f85d8677e69c73ca365628ce8024827c9e3" "923ee73494ea3611d2a1ff9f31bbf8d71b0b0cc2aeb4a6e0944ec6c83bc0ac23" "58f090ea19f5bc674a5a58738dedfb1907107f4953eb0e2ed493253c49356348" "9fe1540491fcf692b8c639a3abacd32b29233bc4cb834a12a0fd1e01cbd0a128" "d6922c974e8a78378eacb01414183ce32bc8dbf2de78aabcc6ad8172547cb074" "235dc2dd925f492667232ead701c450d5c6fce978d5676e54ef9ca6dd37f6ceb" default)))
+    ("b89a4f5916c29a235d0600ad5a0849b1c50fab16c2c518e1d98f0412367e7f97" "6bc387a588201caf31151205e4e468f382ecc0b888bac98b2b525006f7cb3307" "170bb47b35baa3d2439f0fd26b49f4278e9a8decf611aa33a0dad1397620ddc3" "59e82a683db7129c0142b4b5a35dbbeaf8e01a4b81588f8c163bd255b76f4d21" "d1cc05d755d5a21a31bced25bed40f85d8677e69c73ca365628ce8024827c9e3" "923ee73494ea3611d2a1ff9f31bbf8d71b0b0cc2aeb4a6e0944ec6c83bc0ac23" "58f090ea19f5bc674a5a58738dedfb1907107f4953eb0e2ed493253c49356348" "9fe1540491fcf692b8c639a3abacd32b29233bc4cb834a12a0fd1e01cbd0a128" "d6922c974e8a78378eacb01414183ce32bc8dbf2de78aabcc6ad8172547cb074" "235dc2dd925f492667232ead701c450d5c6fce978d5676e54ef9ca6dd37f6ceb" default)))
  '(debbugs-gnu-default-packages (quote ("guix" "guix-patches")))
  '(delete-selection-mode nil)
  '(elfeed-feeds
@@ -58,7 +58,7 @@
  '(org-agenda-files
    (quote
     ("~/org/1-2-1.org" "~/org/chata.org" "~/org/puda.org" "~/org/doma.org" "~/org/ja.org" "~/org/work.org" "~/org/tools.org" "~/org/tyden.org")))
- '(org-hide-leading-stars t)
+ '(org-hide-leading-stars t t)
  '(package-archives
    (quote
     (("marmalade" . "http://marmalade-repo.org/packages/")
@@ -75,7 +75,7 @@
  '(pdf-view-midnight-colors (quote ("#969896" . "#f8eec7")))
  '(pos-tip-background-color "#ffffff")
  '(pos-tip-foreground-color "#78909C")
- '(python-shell-interpreter "python3")
+ '(python-shell-interpreter "python3" t)
  '(safe-local-variable-values
    (quote
     ((eval progn
