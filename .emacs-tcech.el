@@ -1,13 +1,13 @@
 ;; my emacs configuration
 
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
+(require 'use-package)
+(setq use-package-always-ensure t)
 ;;(setq use-package-verbose t)
 ;;(package-initialize)
-(require 'use-package)
 
 ;; read all the secrets - from $HOME
 (let ((file "~/.emacs-secrets.el.gpg"))
@@ -34,16 +34,16 @@
 ;; visual bell
 (setq-default visible-bell t)
 
+(use-package cyberpunk-theme)
+
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
 ;; make compatible with occurences used by ViM users
 (define-coding-system-alias 'UTF-8 'utf-8)
 
 ;; Mouse related
-(use-package mouse
-  :init
-  (xterm-mouse-mode t)
-  (setq mouse-yank-at-point t))
+(xterm-mouse-mode t)
+(setq mouse-yank-at-point t)
 
 
 ;; Keys configuration
@@ -176,6 +176,9 @@
   (setq bugz-db-user "")
   (setq bugz-dont-ask-for-password 1))
 
+(use-package auto-complete
+  :defer t)
+
 ;; RPM stuff
 (use-package rpm-spec-mode
   :load-path (lambda () (concat emacs-config-path ".emacs.d/unsorted"))
@@ -226,10 +229,12 @@
   (setq bidi-paragraph-direction 'left-to-right))
 
 
-(use-package wl
+(use-package wanderlust
   :defer t
   :init
-  (load-library "~/.emacs.d/org-wl.el"))
+  (ignore-errors
+    ;; org-wl is not available anymore, copy when handy, ignore otherwise
+    (load-library "~/.emacs.d/org-wl.el")))
 
 (use-package treemacs
   :ensure t
@@ -477,11 +482,22 @@
 
 (add-hook 'org-mode-hook (lambda () (local-set-key (kbd "C-c r") 'reformat-log)))
 
+(use-package projectile
+  :init
+  (projectile-mode +1)
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map))
 
-(projectile-mode +1)
-(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+(use-package elpy
+  :defer t
+  :init
+  (setq python-shell-interpreter "ipython3"
+        python-shell-interpreter-args "-i --simple-prompt"
+        python-shell-prompt-detect-failure-warning nil))
 
-(setq python-shell-interpreter "jupyter"
-      python-shell-interpreter-args "console --simple-prompt"
-      python-shell-prompt-detect-failure-warning nil)
-(add-to-list 'python-shell-completion-native-disabled-interpreters "jupyter")
+(use-package powerline
+  :defer t
+  :init
+  (powerline-default-theme))
+
+(use-package ag
+  :defer t)
