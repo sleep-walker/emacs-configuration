@@ -18,30 +18,27 @@
  '(column-number-mode t)
  '(company-quickhelp-color-background "#b0b0b0")
  '(company-quickhelp-color-foreground "#232333")
- '(custom-enabled-themes (quote (cyberpunk)))
+ '(custom-enabled-themes '(cyberpunk))
  '(custom-safe-themes
-   (quote
-    ("b89a4f5916c29a235d0600ad5a0849b1c50fab16c2c518e1d98f0412367e7f97" "6bc387a588201caf31151205e4e468f382ecc0b888bac98b2b525006f7cb3307" "170bb47b35baa3d2439f0fd26b49f4278e9a8decf611aa33a0dad1397620ddc3" "59e82a683db7129c0142b4b5a35dbbeaf8e01a4b81588f8c163bd255b76f4d21" "d1cc05d755d5a21a31bced25bed40f85d8677e69c73ca365628ce8024827c9e3" "923ee73494ea3611d2a1ff9f31bbf8d71b0b0cc2aeb4a6e0944ec6c83bc0ac23" "58f090ea19f5bc674a5a58738dedfb1907107f4953eb0e2ed493253c49356348" "9fe1540491fcf692b8c639a3abacd32b29233bc4cb834a12a0fd1e01cbd0a128" "d6922c974e8a78378eacb01414183ce32bc8dbf2de78aabcc6ad8172547cb074" "235dc2dd925f492667232ead701c450d5c6fce978d5676e54ef9ca6dd37f6ceb" default)))
- '(debbugs-gnu-default-packages (quote ("guix" "guix-patches")))
+   '("b89a4f5916c29a235d0600ad5a0849b1c50fab16c2c518e1d98f0412367e7f97" "6bc387a588201caf31151205e4e468f382ecc0b888bac98b2b525006f7cb3307" "170bb47b35baa3d2439f0fd26b49f4278e9a8decf611aa33a0dad1397620ddc3" "59e82a683db7129c0142b4b5a35dbbeaf8e01a4b81588f8c163bd255b76f4d21" "d1cc05d755d5a21a31bced25bed40f85d8677e69c73ca365628ce8024827c9e3" "923ee73494ea3611d2a1ff9f31bbf8d71b0b0cc2aeb4a6e0944ec6c83bc0ac23" "58f090ea19f5bc674a5a58738dedfb1907107f4953eb0e2ed493253c49356348" "9fe1540491fcf692b8c639a3abacd32b29233bc4cb834a12a0fd1e01cbd0a128" "d6922c974e8a78378eacb01414183ce32bc8dbf2de78aabcc6ad8172547cb074" "235dc2dd925f492667232ead701c450d5c6fce978d5676e54ef9ca6dd37f6ceb" default))
+ '(debbugs-gnu-default-packages '("guix" "guix-patches"))
  '(delete-selection-mode nil)
  '(elfeed-feeds
-   (quote
-    ("http://www2.rozhlas.cz/podcast/podcast_porady.php?p_po=15" "http://nevsedni-svet.cz/feed/" "http://www.osel.cz/rss/rss.php" "http://www.root.cz/rss/zpravicky/" "http://www.abclinuxu.cz/auto/abc.rss" "http://www.linuxexpres.cz/rss/clanky" "http://linuxgizmos.com/feed" "http://www.abclinuxu.cz/auto/zpravicky.rss" "http://www.penguin.cz/rss.php" "http://rss.root.cz/clanky/" "http://mjg59.dreamwidth.org/data/rss" "http://linuxsoft.cz/export/linuxsoft_article_cz.rss" "http://taskwarrior.org/projects/taskwarrior/news.atom" "https://savannah.gnu.org/news/atom.php?group=guix" "https://savannah.nongnu.org/news/atom.php?group=guile-json" "http://www.enlightenment.org/rss.php?p=news&l=en" "http://taskwarrior.wordpress.com/feed/" "http://fsfe.org/news/news.en.rss" "http://ipfs.io/blog/rss.xml" "http://andromadus.flinny.org/?q=rss.xml" "http://existentialcomics.com/rss.xml" "http://edevel.tumblr.com/rss" "http://www.podrate.cz/rss.xml" "http://bugemos.com/?q=rss.xml" "http://programovani.tumblr.com/rss" "http://xkcd.com/rss.xml" "http://devopsreactions.tumblr.com/rss" "http://bulsit.cz/rss.xml" "http://www.bunicomic.com/feed/" "http://www.infobaden.cz/feed/" "https://connect.opensuse.org/mod/groups/topicposts.php?topic=42080&group_guid=42079&view=rss" "https://news.opensuse.org/feed" "https://connect.opensuse.org/pg/groups/42079/e17-users/?view=rss" "http://www.lunchtime.cz/rss/restaurant5001.rss" "http://lwn.net/headlines/newrss" "http://www.oesf.org/forum/index.php?act=rssout&id=2" "http://piratske-noviny.cz/run/rss.php?r_id=" "http://watashi-metan.livejournal.com/data/rss" "http://feeds.feedburner.com/SvetAndroida?format=xml" "http://svetneuspesnych.eu/feed/" "https://build.opensuse.org/user/feed/BgkhEKdahDFJGuUxNZZpsy52")))
- '(elmo-passwd-storage-type (quote alist))
+   '("http://www2.rozhlas.cz/podcast/podcast_porady.php?p_po=15" "http://nevsedni-svet.cz/feed/" "http://www.osel.cz/rss/rss.php" "http://www.root.cz/rss/zpravicky/" "http://www.abclinuxu.cz/auto/abc.rss" "http://www.linuxexpres.cz/rss/clanky" "http://linuxgizmos.com/feed" "http://www.abclinuxu.cz/auto/zpravicky.rss" "http://www.penguin.cz/rss.php" "http://rss.root.cz/clanky/" "http://mjg59.dreamwidth.org/data/rss" "http://linuxsoft.cz/export/linuxsoft_article_cz.rss" "http://taskwarrior.org/projects/taskwarrior/news.atom" "https://savannah.gnu.org/news/atom.php?group=guix" "https://savannah.nongnu.org/news/atom.php?group=guile-json" "http://www.enlightenment.org/rss.php?p=news&l=en" "http://taskwarrior.wordpress.com/feed/" "http://fsfe.org/news/news.en.rss" "http://ipfs.io/blog/rss.xml" "http://andromadus.flinny.org/?q=rss.xml" "http://existentialcomics.com/rss.xml" "http://edevel.tumblr.com/rss" "http://www.podrate.cz/rss.xml" "http://bugemos.com/?q=rss.xml" "http://programovani.tumblr.com/rss" "http://xkcd.com/rss.xml" "http://devopsreactions.tumblr.com/rss" "http://bulsit.cz/rss.xml" "http://www.bunicomic.com/feed/" "http://www.infobaden.cz/feed/" "https://connect.opensuse.org/mod/groups/topicposts.php?topic=42080&group_guid=42079&view=rss" "https://news.opensuse.org/feed" "https://connect.opensuse.org/pg/groups/42079/e17-users/?view=rss" "http://www.lunchtime.cz/rss/restaurant5001.rss" "http://lwn.net/headlines/newrss" "http://www.oesf.org/forum/index.php?act=rssout&id=2" "http://piratske-noviny.cz/run/rss.php?r_id=" "http://watashi-metan.livejournal.com/data/rss" "http://feeds.feedburner.com/SvetAndroida?format=xml" "http://svetneuspesnych.eu/feed/" "https://build.opensuse.org/user/feed/BgkhEKdahDFJGuUxNZZpsy52"))
+ '(elmo-passwd-storage-type 'alist)
  '(enwc-wired-device "enp0s31f6")
  '(enwc-wireless-device "wlp1s0")
  '(explicit-shell-file-name nil)
  '(fci-rule-character-color "#452E2E")
  '(fci-rule-color "#383838")
  '(fringe-mode 10 nil (fringe))
- '(geiser-default-implementation (quote guile))
- '(gh-api-v3-authenticator (quote gh-oauth-authenticator))
+ '(geiser-default-implementation 'guile)
+ '(gh-api-v3-authenticator 'gh-oauth-authenticator)
  '(highlight-indent-guides-auto-enabled nil)
  '(highlight-symbol-colors
-   (quote
-    ("#F57F17" "#66BB6A" "#0097A7" "#42A5F5" "#7E57C2" "#D84315")))
+   '("#F57F17" "#66BB6A" "#0097A7" "#42A5F5" "#7E57C2" "#D84315"))
  '(highlight-symbol-foreground-color "#546E7A")
- '(highlight-tail-colors (quote (("#F8BBD0" . 0) ("#FAFAFA" . 100))))
+ '(highlight-tail-colors '(("#F8BBD0" . 0) ("#FAFAFA" . 100)))
  '(jenkins-api-token "d818a163901a6bdbd2f3a23f129d4426")
  '(jenkins-url "https://ci.intgdc.com:443")
  '(jenkins-username "tomas.cech")
@@ -53,32 +50,26 @@
  '(markdown-command "pandoc")
  '(menu-bar-mode nil)
  '(nrepl-message-colors
-   (quote
-    ("#183691" "#969896" "#a71d5d" "#969896" "#0086b3" "#795da3" "#a71d5d" "#969896")))
+   '("#183691" "#969896" "#a71d5d" "#969896" "#0086b3" "#795da3" "#a71d5d" "#969896"))
  '(org-agenda-files
-   (quote
-    ("~/org/1-2-1.org" "~/org/chata.org" "~/org/puda.org" "~/org/doma.org" "~/org/ja.org" "~/org/work.org" "~/org/tools.org" "~/org/tyden.org")))
+   '("~/org/1-2-1.org" "~/org/chata.org" "~/org/puda.org" "~/org/doma.org" "~/org/ja.org" "~/org/work.org" "~/org/tools.org" "~/org/tyden.org"))
  '(org-hide-leading-stars t t)
  '(package-archives
-   (quote
-    (("marmalade" . "http://marmalade-repo.org/packages/")
-     ("gnu" . "http://elpa.gnu.org/packages/")
+   '(("gnu" . "http://elpa.gnu.org/packages/")
      ("melpa" . "http://melpa.org/packages/")
      ("melpa-stable" . "https://stable.melpa.org/packages/")
-     ("orgmode" . "http://orgmode.org/elpa/"))))
+     ("orgmode" . "http://orgmode.org/elpa/")))
  '(package-selected-packages
-   (quote
-    (helm-projectile org-projectile projectile-git-autofetch better-defaults elpy immaterial-theme material-theme pyenv-mode cyberpunk-2019-theme magit-diff-flycheck magit-todos org-alert org-autolist org-beautify-theme org-bullets org-caldav org-cliplink org-index org-journal org-link-minor-mode org-recur org-rich-yank org-shoplist org-super-agenda emacsql-sqlite ob-sql-mode emacsql-mysql treemacs-icons-dired treemacs-magit company tide typescript-mode flycheck-pyflakes flymake-shell pyflakes leuven-theme dash ghub kubernetes kubernetes-helm magit-gitflow forge jedi jedi-core jedi-direx pungi matrix-client frame-purpose rainbow-identifiers esxml tracking ov a f dash-functional anaphora quelpa-use-package quelpa 2048-game ac-rtags geiser helm-flyspell md4rd org-doing pretty-mode slime calfw calfw-gcal calfw-org edit-server slack magit-org-todos org-sync anti-zenburn-theme color-theme-sanityinc-solarized lenlen-theme solarized-theme org-gcal all move-text edts erlang flycheck-rebar3 pulseaudio-control volume bongo dionysos playerctl ampc xterm-color wgrep wgrep-ag wgrep-helm
-                     #("wgrep" 0 5
-                       (escaped t))
-                     "wgrep" treemacs beacon docker dockerfile-mode marcopolo gnus-desktop-notify oauth oauth2 butler jenkins-watch shell-pop buffer-move github-browse-file github-clone github-elpa github-issues github-notifier github-pullrequest github-search grapnel http-twiddle request-deferred restclient restclient-helm groovy-mode python-pep8 python-pylint sudoku dokuwiki dokuwiki-mode pass passmm password-store jenkins jira jira-markup-mode org-jira flycheck-yamllint puppet-mode yaml-mode markdown-mode+ markdown-preview-mode guix pretty-sha-path ac-etags helm-unicode rpm-spec-mode org xcscope impatient-mode skewer-mode org-plus-contrib multiple-cursors enwc seq ac-anaconda czech-holidays helm magit magit-filenotify magit-find-file magit-tramp markdown-preview-eww org-magit ox-reveal org-trello pinentry anaconda-mode orgit x86-lookup use-package projectile cyberpunk-theme helm-themes idle-highlight-mode pylint sauron debbugs wanderlust sane-term pysmell py-import-check pep8 org-linkany markdown-mode helm-gtags helm-cscope helm-ag gitlab flymake-python-pyflakes elfeed cmake-mode ag ac-python ac-helm ac-geiser)))
- '(pdf-view-midnight-colors (quote ("#969896" . "#f8eec7")))
+   '(editorconfig ripgrep prassee-theme zerodark-theme ahungry-theme alect-themes ample-zen-theme commentary-theme danneskjold-theme darkburn-theme hc-zenburn-theme terraform-doc terraform-mode eglot lsp-ivy lsp-mssql sqlup-mode lsp lsp-jedi lsp-pyre lsp-pyright dap-mode lsp-mode lsp-treemacs lsp-ui jq-mode js-comint nodejs-repl realgud-node-debug realgud-node-inspect real-auto-save jinja2-mode poetry ement plz realgud chess go-mode rust-mode powerline gitignore-mode pyvenv auto-complete helm-projectile org-projectile projectile-git-autofetch better-defaults elpy immaterial-theme material-theme pyenv-mode cyberpunk-2019-theme magit-diff-flycheck magit-todos org-alert org-autolist org-beautify-theme org-bullets org-caldav org-cliplink org-index org-journal org-link-minor-mode org-recur org-rich-yank org-shoplist org-super-agenda emacsql-sqlite ob-sql-mode emacsql-mysql treemacs-icons-dired treemacs-magit company tide typescript-mode flycheck-pyflakes flymake-shell pyflakes leuven-theme dash ghub kubernetes kubernetes-helm magit-gitflow forge jedi jedi-core jedi-direx pungi matrix-client frame-purpose rainbow-identifiers esxml tracking ov a f dash-functional anaphora 2048-game ac-rtags geiser helm-flyspell md4rd org-doing pretty-mode slime calfw calfw-gcal calfw-org edit-server slack magit-org-todos org-sync anti-zenburn-theme color-theme-sanityinc-solarized lenlen-theme solarized-theme org-gcal all move-text edts erlang flycheck-rebar3 pulseaudio-control volume bongo dionysos playerctl ampc xterm-color wgrep wgrep-ag wgrep-helm
+                  #("wgrep" 0 5
+                    (escaped t))
+                  "wgrep" treemacs beacon docker dockerfile-mode marcopolo gnus-desktop-notify oauth oauth2 butler jenkins-watch shell-pop buffer-move github-browse-file github-clone github-elpa github-issues github-notifier github-pullrequest github-search grapnel http-twiddle request-deferred restclient restclient-helm groovy-mode python-pep8 python-pylint sudoku dokuwiki dokuwiki-mode pass passmm password-store jenkins jira jira-markup-mode org-jira flycheck-yamllint puppet-mode yaml-mode markdown-mode+ markdown-preview-mode guix pretty-sha-path ac-etags helm-unicode rpm-spec-mode org xcscope impatient-mode skewer-mode org-plus-contrib multiple-cursors enwc seq ac-anaconda czech-holidays helm magit magit-filenotify magit-find-file magit-tramp markdown-preview-eww org-magit ox-reveal org-trello pinentry anaconda-mode orgit x86-lookup use-package projectile cyberpunk-theme helm-themes idle-highlight-mode pylint sauron debbugs wanderlust sane-term pysmell py-import-check pep8 org-linkany markdown-mode helm-gtags helm-cscope helm-ag gitlab flymake-python-pyflakes elfeed cmake-mode ag ac-python ac-helm ac-geiser))
+ '(pdf-view-midnight-colors '("#969896" . "#f8eec7"))
  '(pos-tip-background-color "#ffffff")
  '(pos-tip-foreground-color "#78909C")
- '(python-shell-interpreter "python3" t)
+ '(python-shell-interpreter "python3")
  '(safe-local-variable-values
-   (quote
-    ((eval progn
+   '((eval progn
            (pyvenv-activate
             (format "%s.virtualenv" default-directory))
            (setenv "PYTHONSTARTUP" "/Devel/ubnt/unifi-recurly-backend-prelude.py"))
@@ -86,25 +77,24 @@
      (eval modify-syntax-entry 43 "'")
      (bug-reference-bug-regexp . "<https?://\\(debbugs\\|bugs\\)\\.gnu\\.org/\\([0-9]+\\)>")
      (eval modify-syntax-entry 36 "'")
-     (eval modify-syntax-entry 126 "'"))))
+     (eval modify-syntax-entry 126 "'")))
  '(sane-term-shell-command "/bin/zsh")
  '(scroll-bar-mode nil)
- '(send-mail-function (quote smtpmail-send-it))
- '(shell-pop-shell-type (quote ("eshell" "*eshell*" (lambda nil (eshell)))))
+ '(send-mail-function 'smtpmail-send-it)
+ '(shell-pop-shell-type '("eshell" "*eshell*" (lambda nil (eshell))))
  '(shell-pop-term-shell "/bin/sh")
  '(show-paren-mode t)
  '(smtpmail-smtp-server "fencepost.gnu.org")
  '(smtpmail-smtp-service 587)
  '(smtpmail-smtp-user "sleepwalker")
  '(split-height-threshold 200)
- '(sql-mysql-options (quote ("--binary-as-hex" "--prompt=\\h\\ [\\d]>\\ ")))
+ '(sql-mysql-options '("--binary-as-hex" "--prompt=\\h\\ [\\d]>\\ "))
  '(sql-mysql-program "mysql")
  '(tabbar-background-color "#ffffff")
  '(tool-bar-mode nil)
  '(vc-annotate-background "#b0cde7")
  '(vc-annotate-color-map
-   (quote
-    ((20 . "#969896")
+   '((20 . "#969896")
      (40 . "#183691")
      (60 . "#969896")
      (80 . "#969896")
@@ -121,7 +111,7 @@
      (300 . "#0086b3")
      (320 . "#969896")
      (340 . "#a71d5d")
-     (360 . "#969896"))))
+     (360 . "#969896")))
  '(vc-annotate-very-old-color "#969896"))
 
 
