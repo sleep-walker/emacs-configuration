@@ -44,6 +44,8 @@
 ;; have ediff control window in same frame
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
 
+(ignore-errors (set-face-attribute 'default nil :font "xos4 Terminus" :height 100) t)
+(ignore-errors (set-face-attribute 'default nil :font "Terminus"      :height 100) t)
 
 ;; emacs base packages
 (use-package el-patch
