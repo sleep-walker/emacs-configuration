@@ -1,4 +1,4 @@
-(setq emacs-config-path "/home/tcech/git/emacs-configuration/")
+(setq emacs-config-path (expand-file-name "~/git/emacs-configuration/"))
 (setq custom-file (concat emacs-config-path "gnu-emacs-custom"))
 (load custom-file t t)
 
