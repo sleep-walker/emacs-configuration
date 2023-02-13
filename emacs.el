@@ -88,11 +88,6 @@
 (use-package treemacs :straight t :defer t)
 (use-package eglot :straight t :defer t)
 (use-package ag :straight t :defer t)
-(use-package sane-term
-  :defer t
-  :straight t
-  :bind (("C-x T" . sane-term-create)))
-
 
 (use-package cram-mode
   :straight (cram-mode :type git :host github :repo "signalpillar/cram-mode")
