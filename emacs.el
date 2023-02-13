@@ -24,7 +24,8 @@
 (set-default-coding-systems 'utf-8)
 ;; make compatible with occurences used by ViM users
 (define-coding-system-alias 'UTF-8 'utf-8)
-
+;; don't ask when editing symlink - edit symlink target
+(setq vc-follow-symlinks t)
 
 ;; UI changes
 ;; no startup message
