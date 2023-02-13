@@ -36,6 +36,10 @@
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 
+;; set thresholds not to split anymore
+(setq split-width-threshold 120)
+(setq split-height-threshold 120)
+
 ;; allow scalable fonts
 (setq scalable-fonts-allowed t)
 
@@ -45,8 +49,8 @@
 ;; have ediff control window in same frame
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
 
-(ignore-errors (set-face-attribute 'default nil :font "xos4 Terminus" :height 100) t)
-(ignore-errors (set-face-attribute 'default nil :font "Terminus"      :height 100) t)
+(ignore-errors (set-face-attribute 'default nil :font "xos4 Terminus" :height 130) t)
+(ignore-errors (set-face-attribute 'default nil :font "Terminus"      :height 130) t)
 
 ;; emacs base packages
 (use-package el-patch
