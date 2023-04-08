@@ -16,12 +16,6 @@
   (load bootstrap-file nil 'nomessage))
 
 
-(let ((hostname-file
-       (concat "emacs-" (system-name) ".el")))
-      (if (file-exists-p hostname-file)
-	  (load hostname-file nil 'nomessage)
-	t))
-
 (straight-use-package 'el-patch)
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
@@ -211,3 +205,9 @@
   ;; `completion-at-point' is often bound to M-TAB.
   (setq tab-always-indent 'complete))
 
+;; read hostname specific configuration, allow override of common configuration
+(let ((hostname-file
+       (concat emacs-config-path "emacs-" (system-name) ".el")))
+      (if (file-exists-p hostname-file)
+         (load hostname-file nil 'nomessage)
+       t))
